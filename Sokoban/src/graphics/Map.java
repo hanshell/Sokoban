@@ -74,7 +74,7 @@ public class Map {
 			System.out.println();
 		}
 	}
-	private BoardTile tileType(char c){
+	public static BoardTile tileType(char c){
 		switch (c) {
 		case '#':
 			return new WallTile();
