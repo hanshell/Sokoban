@@ -7,7 +7,7 @@ public abstract class BoardTile {
 	protected boolean canMoveOn;
 	protected boolean canMove;
 	protected char character;
-	private final String fileprefix="C:\\Users\\Melbster\\Documents\\NTNU\\Sokoban\\src\\ImageIcons\\";
+	private final String fileprefix="C:\\Users\\Melbster\\git\\Sokoban\\Sokoban\\src\\ImageIcons\\";
 	
 	public BoardTile(boolean canMoveOn, boolean canMove, char character){
 		this.canMoveOn=canMoveOn;
