@@ -2,7 +2,7 @@ package tiles;
 
 public class TargetTile extends BoardTile{
 	public TargetTile(){
-		super(true, false, '+');
+		super(false, false, '+');
 	}
 
 	public String getFilePath() {
