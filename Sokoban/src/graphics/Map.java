@@ -8,7 +8,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import tiles.BoardTile;
+import tiles.MovableOnTargetTile;
+import tiles.MovableTile;
 import tiles.OpenSpaceTile;
+import tiles.PlayerOnTargetTile;
 import tiles.PlayerTile;
 import tiles.TargetTile;
 import tiles.WallTile;
@@ -50,7 +53,6 @@ public class Map {
 	public ArrayList<ArrayList<Character>> getLines(){
 		return this.lines;
 	}
-	
 	/*
 	 * returns the BoardTile-objects in a nested ArrayList
 	 */
@@ -82,6 +84,12 @@ public class Map {
 			return new PlayerTile();
 		case '+':
 			return new TargetTile();
+		case '%':
+			return new MovableOnTargetTile();
+		case '*':
+			return new PlayerOnTargetTile();
+		case '?':
+			return new MovableTile();
 		default:
 			return new OpenSpaceTile();
 		}
